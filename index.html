@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yummy</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bts css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="bg-main-color">
+    <div class="loading bg-main-color">
+      <span class="loader"></span>
+    </div>
+
+    <main>
+      <aside>
+        <div
+          class="nav-side d-flex min-vh-100 position-fixed top-0 z-3"
+        >
+          <div
+            class="nav-menu d-flex flex-column justify-content-between min-vh-100 p-4 bg-main-color text-main-color position-relative  "
+          >
+            <div class="links">
+              <ul class="list-unstyled overflow-hidden">
+                <li class="py-2 searchbtn"><a href="#">Search</a></li>
+                <li class="py-2 categories"><a href="#">Categories</a></li>
+                <li class="py-2 area"><a href="#">Area</a></li>
+                <li class="py-2 ingredients"><a href="#">Ingredients</a></li>
+                <li class="py-2 contact"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+              <p class="m-0">Copyright Â© 2019 All Rights</p>
+              <p>Reserved.</p>
+            </div>
+          </div>
+          <div
+            class="nav-logo d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+          >
+            <img src="image/logo.png" alt="logo" />
+            <div class="">
+              <i class="fa-solid fa-bars fa-2x close-open"></i>
+            </div>
+
+            <div class="footer-icon">
+              <i class="fa-solid fa-globe d-block"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="search bg-transparent d-none">
+        <div class="container w-75">
+          <div class="row py-4">
+            <div class="col col-12 col-md-6">
+              <input
+                type="text"
+                class="form-control bg-transparent text-main-color"
+                placeholder="Search by Name"
+                id="searchByName"
+              />
+            </div>
+            <div class="col col-12 col-md-6">
+              <input
+                type="text"
+                class="form-control bg-transparent text-main-color"
+                placeholder="Search by Fisrt Letter"
+                id="searchByLetter"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+
+
+
+
+      <section class="recipes overflow-auto position-relative">
+        <div class="container">
+          <div class="row py-5 g-4 text-main-color" id="showData">
+           
+            
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-us min-vh-100 justify-content-center align-items-center d-none"
+      >
+        <div class="container w-75 text-center">
+          <div class="row g-4 py-5">
+            <div class="col col-12 col-md-6">
+              <input
+                id="nameInput"
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Name"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="nameErr">
+                Please Enter Valid Name
+              </div>
+            </div>
+            <div class="col col-12 col-md-6">
+              <input
+                id="emailInput"
+                type="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="emailErr">
+                Email not valid *example@yyy.zzz
+              </div>
+            </div>
+            <div class="col col-12 col-md-6">
+              <input
+                id="phoneInput"
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Phone"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="phoneErr">
+                Enter valid Phone Number
+              </div>
+            </div>
+            <div class="col col-12 col-md-6">
+              <input
+                id="ageInput"
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Age"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="ageErr">
+                Enter valid age
+              </div>
+            </div>
+            <div class="col col-12 col-md-6">
+              <input
+                id="passInput"
+                type="password"
+                class="form-control"
+                placeholder="Enter Your Password"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="passErr">
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 ">
+              <input
+                id="confirmPassInput"
+                type="password"
+                class="form-control"
+                placeholder="RePassword"
+              />
+              <div class="alert alert-danger mt-2 d-none" id="rePassErr">
+                Enter valid repassword
+              </div>
+            </div>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-outline-danger px-2 mt-3" disabled >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
