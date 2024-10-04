@@ -17,13 +17,12 @@ function openMenu() {
   );
 
   for (let i = 0; i < 5; i++) {
-    $(".links li")
-      .animate(
-        {
-          top: 0,
-        },
-        (i + 5) * 100
-      );
+    $(".links li").animate(
+      {
+        top: 0,
+      },
+      (i + 5) * 100
+    );
   }
 }
 
@@ -70,12 +69,12 @@ function displayData(response) {
   let data = ``;
   for (let i = 0; i < response.length; i++) {
     data += `
-      <div class="col col-12 col-sm-3 ">
+      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ">
               <div onclick="getMealRecipe(${response[i].idMeal})" class="box position-relative rounded-3 overflow-hidden" >
                 <img
                   src=${response[i].strMealThumb}
                   alt="recipe"
-                  class="img-fluid"
+                  class="img-fluid w-100"
                 />
                 <div
                   class="layer text-black"
@@ -270,7 +269,7 @@ $(".categories").on("click", function () {
   showData.removeClass("d-none");
   closeMenu();
   $(".contact-us").addClass("d-none");
-  $(".search").addClass("d-none"); 
+  $(".search").addClass("d-none");
 });
 
 //! get Areas
@@ -308,7 +307,6 @@ $(".area").on("click", function () {
   showData.removeClass("d-none");
   $(".search").addClass("d-none");
   $(".contact-us").addClass("d-none");
-
 });
 
 //! get Ingredients
@@ -347,7 +345,6 @@ $(".ingredients").on("click", function () {
   showData.removeClass("d-none");
   $(".search").addClass("d-none");
   $(".contact-us").addClass("d-none");
-
 });
 
 //! input validations
@@ -384,29 +381,27 @@ function confirmPassword(pass, repass) {
 
 $("#nameInput").on("keyup", function () {
   // inputValidation($(this), "#nameErr");
-  submitInput()
+  submitInput();
 });
 $("#emailInput").on("keyup", function () {
   // inputValidation($(this), "#emailErr");
-  submitInput()
+  submitInput();
 });
 $("#phoneInput").on("keyup", function () {
   // inputValidation($(this), "#phoneErr");
-  submitInput()
+  submitInput();
 });
 $("#ageInput").on("keyup", function () {
   // inputValidation($(this), "#ageErr");
-  submitInput()
+  submitInput();
 });
 $("#passInput").on("keyup", function () {
   // inputValidation($(this), "#passErr");
-  submitInput()
+  submitInput();
 });
 $("#confirmPassInput").on("keyup", function () {
   // confirmPassword($("#passInput"), $(this));
-  submitInput()
-
-  
+  submitInput();
 });
 
 function submitInput() {
@@ -424,8 +419,7 @@ function submitInput() {
   }
 }
 
-$("#submitBtn").on('click',function(){
-$('input').val('')
-$(this).attr('disabled',true)
-  }
-)
+$("#submitBtn").on("click", function () {
+  $("input").val("");
+  $(this).attr("disabled", true);
+});

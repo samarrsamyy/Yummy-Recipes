@@ -1,4 +1,4 @@
-  .loading {
+.loading {
   width: 100%;
   min-height: 100vh;
   position: fixed;
@@ -8,8 +8,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 .loader {
   color: #fff;
@@ -75,23 +73,17 @@ a {
   opacity: 0.5;
 }
 
-
 aside .nav-logo img {
   width: 50px;
 }
 
-aside .links li{
+aside .links li {
   position: relative;
   top: 300px;
 }
 
-
-
-
-
-
-.recipes .layer{
-  background-color: rgba(255,255,255,0.7);
+.recipes .layer {
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 5px;
   position: absolute;
   top: 100%;
@@ -99,28 +91,32 @@ aside .links li{
   height: 100%;
   display: flex;
   align-items: center;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.recipes .layer2{
-  background-color: rgba(255,255,255,0.7);
+.recipes .layer2 {
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding: 5px;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
-
-
 
 .recipes .box:hover .layer,
-.recipes .box:hover .layer2
-{
-  top:0;
+.recipes .box:hover .layer2 {
+  top: 0;
 }
 
-.recipes .box{
+.recipes .box {
   cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .recipes {
+    width: 75%;
+    margin: auto;
+    padding-left: 48px;
+  }
 }
