@@ -119,4 +119,10 @@ aside .links li {
     margin: auto;
     padding-left: 48px;
   }
+
+  .search,
+  .contact-us {
+    margin: auto;
+    padding-left: 48px;
+  }
 }
